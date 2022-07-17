@@ -8,19 +8,19 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = (dates, num) => {
-  const array = [];
-  for (let i = 0; i < dates.length; i++) {
-    const date = new Date(dates[i]).getTime() / 1000;
+const createDate = (data, i) => {
+  const baru = [];
+  for (let i = 0; i < data.length; i++) {
+    const date = new Date(data[i]).getTime() / 1000;
     const dateString = date.toString();
-    array.push(dateString);
+    baru.push(dateString);
   }
-  const sortDate = array.sort((a, b) => a - b);
-  if (num == undefined) {
-    const sortDate = array.sort((a, b) => a - b);
-    return sortDate.join("-");
+  const hmmmm = baru.sort((a, b) => a - b);
+  if (i == undefined) {
+    const hmm = baru.sort((a, b) => a - b);
+    return hmm.join("-");
   } else {
-    return sortDate[num];
+    return hmmmm[i];
   }
 };
 
