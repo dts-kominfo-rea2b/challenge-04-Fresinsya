@@ -17,8 +17,8 @@ const createDate = (data, i) => {
   }
   const hmmmm = baru.sort((a, b) => a - b);
   if (i == undefined) {
-    const hmm = baru.sort((a, b) => a - b);
-    return hmm.join("-");
+    const hmmmm = baru.sort((a, b) => a - b);
+    return hmmmm.join("-");
   } else {
     return hmmmm[i];
   }
