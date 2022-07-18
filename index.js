@@ -17,7 +17,7 @@ const createDate = (array, i) => {
           baru.push(belum);
       }
       baru.sort((a, b) => a - b);
-      return baru;
+      return baru.join("-");
   } else { // ada
       const belum = new Date(array[i]).getTime() / 1000;
       const time = belum.toString();
